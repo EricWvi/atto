@@ -1,0 +1,27 @@
+addr: :8765
+route:
+  back:
+    base: "/api"
+  front:
+    dir: "dist"
+    index: "dist/index.html"
+oss:
+  endpoint: localhost:9000
+  access: AttoDev
+  secret: attotest
+  bucket: atto-dev
+  protocol: http
+log:
+  location: log/atto.log
+  maxSize: 10       # megabytes
+  maxBackups: 3
+  maxAge: 28        # days
+  mode: debug
+db:
+  name: atto_dev
+  addr: localhost:8123
+  username: root
+  password: 1234
+gormlog: true
+encrypt:
+  jwt_secret: Rtx8BPKOEF2mB6mGVKENIPWYQS3JOEYijxR42qRgq0iBb5
